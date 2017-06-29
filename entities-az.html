@@ -178,9 +178,8 @@
 
 
 
-    
-
-    
+  
+      
 <!-- Fixed navbar -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
@@ -199,13 +198,13 @@
     </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html"><code style="font-size: 115%;">http://data.hulib.helsinki.fi/attx/onto#</code></a></li>
+        <li ><a href="index.html"><code style="font-size: 115%;">http://data.hulib.helsinki.fi/attx/onto#</code></a></li>
         
 
        
 
 
-        <li  ><a href="entities-az.html">Entities A-Z</a></li>
+        <li class="active" ><a href="entities-az.html">Entities A-Z</a></li>
         
         <li ><a href="entities-tree-classes.html">Classes Tree</a></li>
         
@@ -226,8 +225,7 @@
   </div>
 </nav>
 
-
-    
+  
 
 
 
@@ -398,19 +396,22 @@
         
 
 
+
+
+
+
+
+
+
+
 <ol class="breadcrumb">
-  <li class="active">
-    Home
+  <li>
+    <a href="index.html">Home</a>
   </li>
+  <li class="active">
+        Entities A-Z
+    </li>
 </ol>
-
-
-
-
-
-
-
-
 
 
 
@@ -456,13 +457,12 @@
 
         <div class="page-header">
 
-            <h3>Home
+            <h3>Entities A-Z
 
             </h3>
+            <input id="search-input" type="text" class="form-control" placeholder="Filter...">
 
         </div>
-
-
 
 
       <div class="row">
@@ -470,162 +470,148 @@
         
         <div class="col-md-6">
 
-           
-
-           
-
-           <div class="row"><div class="col-md-12">
-              <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Ontology Metadata</h3>
-            </div>
-            <div class="panel-body">
-              
-              <dl>
-                <dt>URI</dt>
-                <dd><code>http://data.hulib.helsinki.fi/attx/onto#</code></dd>
-              </dl>
-                
-                    <dl>
-                        
-                            <dt>dc:creator</dt>
-                            <dd>ATTX project team</dd>
-                        
-                            <dt>dc:date</dt>
-                            <dd>2017-07-04</dd>
-                        
-                            <dt>dc:rights</dt>
-                            <dd>This work is licensed under a Creative Commons Attribution 4.0 International License http://creativecommons.org/licenses/by/4.0/</dd>
-                        
-                            
-                            <dd>This work is licensed under a Creative Commons Attribution 4.0 International License.</dd>
-                        
-                            <dt>owl:versionIRI</dt>
-                            <dd>http://data.hulib.helsinki.fi/attx/onto#</dd>
-                        
-                            <dt>owl:versionInfo</dt>
-                            <dd>ATTX Workflow ontology 2.0</dd>
-                        
-                            <dt>rdf:type</dt>
-                            <dd>http://www.w3.org/2002/07/owl#Ontology</dd>
-                        
-                            <dt>rdfs:comment</dt>
-                            <dd>This ontology is published by the ATTX project, part of the University of Helsinki Library.</dd>
-                        
-                            <dt>rdfs:label</dt>
-                            <dd>ATTX Workflow Ontology</dd>
-                        
-                            <dt>rdfs:seeAlso</dt>
-                            <dd>http://helsinki.fi/library</dd>
-                        
-                    </dl>
-                
-            </div>
-          </div>
-           </div></div>
-           
         
-
-
-           <div class="row"><div class="col-md-12">
+          <div class="row">
+            <div class="col-md-12">
               <div class="panel panel-default">
             <div class="panel-heading">
-              <h3 class="panel-title">Metrics</h3>
+              <h3 class="panel-title">Classes (20)</h3>
             </div>
-            <div class="panel-body">
-                <dl>
+            <div class="panel-body entities-list" style="overflow: auto;">
+               <dl>
 
-                 
+               
+                   <dt><a href="class-httpcreativecommonsorgnslicense.html">http://creativecommons.org/ns#License</a></dt>
+                   <dd>
 
-                  
+                   </dd>
 
-                      <dt>Ontologies</dt>
-                      <dd>1</dd>
+               
+                   <dt><a href="class-ontoacquisitionworkflow.html">onto:AcquisitionWorkflow</a></dt>
+                   <dd>
 
-                  
+                   </dd>
 
-                    
+               
+                   <dt><a href="class-ontoartifact.html">onto:Artifact</a></dt>
+                   <dd>
 
-                  
+                   </dd>
 
-                      <dt>Triples</dt>
-                      <dd>184</dd>
+               
+                   <dt><a href="class-ontodataset.html">onto:Dataset</a></dt>
+                   <dd>
 
-                  
+                   </dd>
 
-                    
+               
+                   <dt><a href="class-ontodisseminationworkflow.html">onto:DisseminationWorkflow</a></dt>
+                   <dd>
 
-                  
+                   </dd>
 
-                      <dt>Classes</dt>
-                      <dd>20</dd>
+               
+                   <dt><a href="class-ontodistributionstep.html">onto:DistributionStep</a></dt>
+                   <dd>
 
-                  
+                   </dd>
 
-                    
+               
+                   <dt><a href="class-ontoenrichmentworkflow.html">onto:EnrichmentWorkflow</a></dt>
+                   <dd>
 
-                  
+                   </dd>
 
-                      <dt>Properties</dt>
-                      <dd>27</dd>
+               
+                   <dt><a href="class-ontoinputstep.html">onto:InputStep</a></dt>
+                   <dd>
 
-                  
+                   </dd>
 
-                    
+               
+                   <dt><a href="class-ontolinkingstrategy.html">onto:LinkingStrategy</a></dt>
+                   <dd>
 
-                  
+                   </dd>
 
-                      <dt>Annotation Properties</dt>
-                      <dd>6</dd>
+               
+                   <dt><a href="class-ontoprocess.html">onto:Process</a></dt>
+                   <dd>
 
-                  
+                   </dd>
 
-                    
+               
+                   <dt><a href="class-ontoprocessingstep.html">onto:ProcessingStep</a></dt>
+                   <dd>
 
-                  
+                   </dd>
 
-                      <dt>Object Properties</dt>
-                      <dd>18</dd>
+               
+                   <dt><a href="class-ontostep.html">onto:Step</a></dt>
+                   <dd>
 
-                  
+                   </dd>
 
-                    
+               
+                   <dt><a href="class-ontoworkflow.html">onto:Workflow</a></dt>
+                   <dd>
 
-                  
+                   </dd>
 
-                      <dt>Datatype Properties</dt>
-                      <dd>3</dd>
+               
+                   <dt><a href="class-ontoworkflowexecution.html">onto:WorkflowExecution</a></dt>
+                   <dd>
 
-                  
+                   </dd>
 
-                    
+               
+                   <dt><a href="class-provactivity.html">prov:Activity</a></dt>
+                   <dd>
 
-                  
+                   </dd>
 
-                      <dt>Skos Concepts</dt>
-                      <dd>0</dd>
+               
+                   <dt><a href="class-provagent.html">prov:Agent</a></dt>
+                   <dd>
 
-                  
+                   </dd>
 
-                    
+               
+                   <dt><a href="class-provassociation.html">prov:Association</a></dt>
+                   <dd>
 
-                  
+                   </dd>
 
-                      <dt>Data Shapes</dt>
-                      <dd>0</dd>
+               
+                   <dt><a href="class-provinfluence.html">prov:Influence</a></dt>
+                   <dd>
 
-                  
+                   </dd>
 
-                    
+               
+                   <dt><a href="class-provplan.html">prov:Plan</a></dt>
+                   <dd>
 
-                  
+                   </dd>
 
-                    
+               
+                   <dt><a href="class-provrole.html">prov:Role</a></dt>
+                   <dd>
 
-                </dl>
+                   </dd>
+
+               
+
+              </dl>
             </div>
           </div>
-           </div></div>
+            </div>
+          </div>
+          
+
+
+
+           
 
 
 
@@ -638,84 +624,191 @@
         <div class="col-md-6">
 
 
-          
-            <div class="row">
-              <div class="col-md-12">
-                <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">Namespaces</h3>
+           
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Properties (27)</h3>
+                </div>
+                <div class="panel-body entities-list" style="overflow: auto;">
+                   <dl>
+
+                   
+                       <dt><a href="prop-dccreator.html">dc:creator</a></dt>
+                       <dd>
+
+                       </dd>
+
+                   
+                       <dt><a href="prop-dcdate.html">dc:date</a></dt>
+                       <dd>
+
+                       </dd>
+
+                   
+                       <dt><a href="prop-dcrights.html">dc:rights</a></dt>
+                       <dd>
+
+                       </dd>
+
+                   
+                       <dt><a href="prop-rdfscomment.html">rdfs:comment</a></dt>
+                       <dd>
+
+                       </dd>
+
+                   
+                       <dt><a href="prop-skosaltlabel.html">skos:altLabel</a></dt>
+                       <dd>
+
+                       </dd>
+
+                   
+                       <dt><a href="prop-skospreflabel.html">skos:prefLabel</a></dt>
+                       <dd>
+
+                       </dd>
+
+                   
+                       <dt><a href="prop-ontohasstepconfig.html">onto:hasStepConfig</a></dt>
+                       <dd>
+
+                       </dd>
+
+                   
+                       <dt><a href="prop-provendedattime.html">prov:endedAtTime</a></dt>
+                       <dd>
+
+                       </dd>
+
+                   
+                       <dt><a href="prop-provstartedattime.html">prov:startedAtTime</a></dt>
+                       <dd>
+
+                       </dd>
+
+                   
+                       <dt><a href="prop-httpcreativecommonsorgnslicense.html">http://creativecommons.org/ns#license</a></dt>
+                       <dd>
+
+                       </dd>
+
+                   
+                       <dt><a href="prop-ontohadrole.html">onto:hadRole</a></dt>
+                       <dd>
+
+                       </dd>
+
+                   
+                       <dt><a href="prop-ontohasassociatedgraph.html">onto:hasAssociatedGraph</a></dt>
+                       <dd>
+
+                       </dd>
+
+                   
+                       <dt><a href="prop-ontohasstrategytype.html">onto:hasStrategyType</a></dt>
+                       <dd>
+
+                       </dd>
+
+                   
+                       <dt><a href="prop-ontoisdependenton.html">onto:isDependentOn</a></dt>
+                       <dd>
+
+                       </dd>
+
+                   
+                       <dt><a href="prop-ontousesartifact.html">onto:usesArtifact</a></dt>
+                       <dd>
+
+                       </dd>
+
+                   
+                       <dt><a href="prop-ontousesworkflowexecution.html">onto:usesWorkflowExecution</a></dt>
+                       <dd>
+
+                       </dd>
+
+                   
+                       <dt><a href="prop-pwohasfirststep.html">pwo:hasFirstStep</a></dt>
+                       <dd>
+
+                       </dd>
+
+                   
+                       <dt><a href="prop-pwohasnextstep.html">pwo:hasNextStep</a></dt>
+                       <dd>
+
+                       </dd>
+
+                   
+                       <dt><a href="prop-pwohasstep.html">pwo:hasStep</a></dt>
+                       <dd>
+
+                       </dd>
+
+                   
+                       <dt><a href="prop-provagent.html">prov:agent</a></dt>
+                       <dd>
+
+                       </dd>
+
+                   
+                       <dt><a href="prop-provgenerated.html">prov:generated</a></dt>
+                       <dd>
+
+                       </dd>
+
+                   
+                       <dt><a href="prop-provhadderivation.html">prov:hadDerivation</a></dt>
+                       <dd>
+
+                       </dd>
+
+                   
+                       <dt><a href="prop-provhadplan.html">prov:hadPlan</a></dt>
+                       <dd>
+
+                       </dd>
+
+                   
+                       <dt><a href="prop-provqualifiedassociation.html">prov:qualifiedAssociation</a></dt>
+                       <dd>
+
+                       </dd>
+
+                   
+                       <dt><a href="prop-provused.html">prov:used</a></dt>
+                       <dd>
+
+                       </dd>
+
+                   
+                       <dt><a href="prop-provwasassociatedwith.html">prov:wasAssociatedWith</a></dt>
+                       <dd>
+
+                       </dd>
+
+                   
+                       <dt><a href="prop-provwasderivedfrom.html">prov:wasDerivedFrom</a></dt>
+                       <dd>
+
+                       </dd>
+
+                   
+
+                  </dl>
+                </div>
               </div>
-              <div class="panel-body" style="overflow: auto;">
-                 <dl class="-dl-horizontal" style="--margin-left: -100px;">
-
-                 
-                     <dt><span class="label label-info">:</span></dt>
-                     <dd><a href="http://data.hulib.helsinki.fi/attx/onto#" target="_blank">http://data.hulib.helsinki.fi/attx/onto#</a></dd>
-
-                 
-                     <dt><span class="label label-info">cc</span></dt>
-                     <dd><a href="https://creativecommons.org/ns#" target="_blank">https://creativecommons.org/ns#</a></dd>
-
-                 
-                     <dt><span class="label label-info">dc</span></dt>
-                     <dd><a href="http://purl.org/dc/elements/1.1/" target="_blank">http://purl.org/dc/elements/1.1/</a></dd>
-
-                 
-                     <dt><span class="label label-info">dcterms</span></dt>
-                     <dd><a href="http://purl.org/dc/terms/" target="_blank">http://purl.org/dc/terms/</a></dd>
-
-                 
-                     <dt><span class="label label-info">owl</span></dt>
-                     <dd><a href="http://www.w3.org/2002/07/owl#" target="_blank">http://www.w3.org/2002/07/owl#</a></dd>
-
-                 
-                     <dt><span class="label label-info">prov</span></dt>
-                     <dd><a href="http://www.w3.org/ns/prov#" target="_blank">http://www.w3.org/ns/prov#</a></dd>
-
-                 
-                     <dt><span class="label label-info">pwo</span></dt>
-                     <dd><a href="http://purl.org/spar/pwo/" target="_blank">http://purl.org/spar/pwo/</a></dd>
-
-                 
-                     <dt><span class="label label-info">rdf</span></dt>
-                     <dd><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#" target="_blank">http://www.w3.org/1999/02/22-rdf-syntax-ns#</a></dd>
-
-                 
-                     <dt><span class="label label-info">rdfs</span></dt>
-                     <dd><a href="http://www.w3.org/2000/01/rdf-schema#" target="_blank">http://www.w3.org/2000/01/rdf-schema#</a></dd>
-
-                 
-                     <dt><span class="label label-info">sh</span></dt>
-                     <dd><a href="http://www.w3.org/ns/shacl#" target="_blank">http://www.w3.org/ns/shacl#</a></dd>
-
-                 
-                     <dt><span class="label label-info">skos</span></dt>
-                     <dd><a href="http://www.w3.org/2004/02/skos/core#" target="_blank">http://www.w3.org/2004/02/skos/core#</a></dd>
-
-                 
-                     <dt><span class="label label-info">vann</span></dt>
-                     <dd><a href="http://purl.org/vocab/vann/" target="_blank">http://purl.org/vocab/vann/</a></dd>
-
-                 
-                     <dt><span class="label label-info">void</span></dt>
-                     <dd><a href="http://rdfs.org/ns/void#" target="_blank">http://rdfs.org/ns/void#</a></dd>
-
-                 
-                     <dt><span class="label label-info">xml</span></dt>
-                     <dd><a href="http://www.w3.org/XML/1998/namespace" target="_blank">http://www.w3.org/XML/1998/namespace</a></dd>
-
-                 
-                     <dt><span class="label label-info">xsd</span></dt>
-                     <dd><a href="http://www.w3.org/2001/XMLSchema#" target="_blank">http://www.w3.org/2001/XMLSchema#</a></dd>
-
-                 
-
-                </dl>
+                </div>
               </div>
-            </div>
-              </div>
-            </div>
-            
+        
+
+
+
+
+
         </div>
          
 
@@ -805,6 +898,25 @@ $('#search-input-sidebar').keyup(function() {
 
 
 
+<script type="text/javascript">
+
+// http://stackoverflow.com/questions/9127498/how-to-perform-a-real-time-search-and-filter-on-a-html-table
+
+  $('#search-input').keyup(function() {
+
+    var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
+
+    // var $rows = $(this).next(".entities-list").find("div");
+    var $rows = $(this).parent().next().find(".entities-list dt");
+
+    $rows.show().filter(function() {
+        var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
+        return !~text.indexOf(val);
+    }).hide();
+});
+
+
+</script>
 
 
 

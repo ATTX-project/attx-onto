@@ -178,9 +178,8 @@
 
 
 
-    
-
-    
+  
+      
 <!-- Fixed navbar -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
@@ -199,7 +198,7 @@
     </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html"><code style="font-size: 115%;">http://data.hulib.helsinki.fi/attx/onto#</code></a></li>
+        <li ><a href="index.html"><code style="font-size: 115%;">http://data.hulib.helsinki.fi/attx/onto#</code></a></li>
         
 
        
@@ -210,7 +209,7 @@
         <li ><a href="entities-tree-classes.html">Classes Tree</a></li>
         
         
-        <li ><a href="entities-tree-properties.html">Properties Tree</a></li>
+        <li class="active"><a href="entities-tree-properties.html">Properties Tree</a></li>
         
         
         <li  ><a href="statistics.html">Statistics</a></li>
@@ -226,8 +225,7 @@
   </div>
 </nav>
 
-
-    
+  
 
 
 
@@ -302,7 +300,7 @@
         
 
         
-            <li class="-second-level" id="sd_properties"><a  href="entities-tree-properties.html">Properties (27)</a>
+            <li class="-second-level" id="sd_properties"><a class="active" href="entities-tree-properties.html">Properties (27)</a>
             </li>
 
             
@@ -394,14 +392,41 @@
 	
 
 
+
     
         
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <ol class="breadcrumb">
-  <li class="active">
-    Home
+  <li>
+    <a href="index.html">Home</a>
   </li>
+  <li>
+        <a href="entities-az.html">Entities</a>
+    </li>
+    <li class="active">
+          Properties
+      </li>
 </ol>
 
 
@@ -430,296 +455,95 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
 
 
 
-        <div class="page-header">
 
-            <h3>Home
+  <div class="page-header">
+
+      <h3>Entities Tree: Properties
+      </h3>
+      <input id="search-input" type="text" class="form-control" placeholder="Filter...">
+
+  </div>
+
+
+
+     <div class="row"><div class="col-md-12">
+        <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Tree</h3>
+      </div>
+      <div class="panel-body entities-list">
+
+          <table class="h"><tr>
+							<td class="tc" colspan=4><a title="http://purl.org/dc/elements/1.1/creator" class="treelinks" href="prop-dccreator.html">dc:creator</a></td>
+						  </tr><tr>
+							<td class="tc" colspan=4><a title="http://purl.org/dc/elements/1.1/date" class="treelinks" href="prop-dcdate.html">dc:date</a></td>
+						  </tr><tr>
+							<td class="tc" colspan=4><a title="http://purl.org/dc/elements/1.1/rights" class="treelinks" href="prop-dcrights.html">dc:rights</a></td>
+						  </tr><tr>
+							<td class="tc" colspan=4><a title="http://www.w3.org/2000/01/rdf-schema#comment" class="treelinks" href="prop-rdfscomment.html">rdfs:comment</a></td>
+						  </tr><tr>
+							<td class="tc" colspan=4><a title="http://www.w3.org/2004/02/skos/core#altLabel" class="treelinks" href="prop-skosaltlabel.html">skos:altLabel</a></td>
+						  </tr><tr>
+							<td class="tc" colspan=4><a title="http://www.w3.org/2004/02/skos/core#prefLabel" class="treelinks" href="prop-skospreflabel.html">skos:prefLabel</a></td>
+						  </tr><tr>
+							<td class="tc" colspan=4><a title="http://data.hulib.helsinki.fi/attx/onto#hasStepConfig" class="treelinks" href="prop-ontohasstepconfig.html">onto:hasStepConfig</a></td>
+						  </tr><tr>
+							<td class="tc" colspan=4><a title="http://www.w3.org/ns/prov#endedAtTime" class="treelinks" href="prop-provendedattime.html">prov:endedAtTime</a></td>
+						  </tr><tr>
+							<td class="tc" colspan=4><a title="http://www.w3.org/ns/prov#startedAtTime" class="treelinks" href="prop-provstartedattime.html">prov:startedAtTime</a></td>
+						  </tr><tr>
+							<td class="tc" colspan=4><a title="http://creativecommons.org/ns#license" class="treelinks" href="prop-httpcreativecommonsorgnslicense.html">http://creativecommons.org/ns#license</a></td>
+						  </tr><tr>
+							<td class="tc" colspan=4><a title="http://data.hulib.helsinki.fi/attx/onto#hadRole" class="treelinks" href="prop-ontohadrole.html">onto:hadRole</a></td>
+						  </tr><tr>
+							<td class="tc" colspan=4><a title="http://data.hulib.helsinki.fi/attx/onto#hasAssociatedGraph" class="treelinks" href="prop-ontohasassociatedgraph.html">onto:hasAssociatedGraph</a></td>
+						  </tr><tr>
+							<td class="tc" colspan=4><a title="http://data.hulib.helsinki.fi/attx/onto#hasStrategyType" class="treelinks" href="prop-ontohasstrategytype.html">onto:hasStrategyType</a></td>
+						  </tr><tr>
+							<td class="tc" colspan=4><a title="http://data.hulib.helsinki.fi/attx/onto#isDependentOn" class="treelinks" href="prop-ontoisdependenton.html">onto:isDependentOn</a></td>
+						  </tr><tr>
+							<td class="tc" colspan=4><a title="http://data.hulib.helsinki.fi/attx/onto#usesWorkflowExecution" class="treelinks" href="prop-ontousesworkflowexecution.html">onto:usesWorkflowExecution</a></td>
+						  </tr><tr>
+							<td class="tc" colspan=4><a title="http://purl.org/spar/pwo/hasFirstStep" class="treelinks" href="prop-pwohasfirststep.html">pwo:hasFirstStep</a></td>
+						  </tr><tr>
+							<td class="tc" colspan=4><a title="http://purl.org/spar/pwo/hasNextStep" class="treelinks" href="prop-pwohasnextstep.html">pwo:hasNextStep</a></td>
+						  </tr><tr>
+							<td class="tc" colspan=4><a title="http://purl.org/spar/pwo/hasStep" class="treelinks" href="prop-pwohasstep.html">pwo:hasStep</a></td>
+						  </tr><tr>
+							<td class="tc" colspan=4><a title="http://www.w3.org/ns/prov#agent" class="treelinks" href="prop-provagent.html">prov:agent</a></td>
+						  </tr><tr>
+							<td class="tc" colspan=4><a title="http://www.w3.org/ns/prov#generated" class="treelinks" href="prop-provgenerated.html">prov:generated</a></td>
+						  </tr><tr>
+							<td class="tc" colspan=4><a title="http://www.w3.org/ns/prov#hadDerivation" class="treelinks" href="prop-provhadderivation.html">prov:hadDerivation</a></td>
+						  </tr><tr>
+							<td class="tc" colspan=4><a title="http://www.w3.org/ns/prov#hadPlan" class="treelinks" href="prop-provhadplan.html">prov:hadPlan</a></td>
+						  </tr><tr>
+							<td class="tc" colspan=4><a title="http://www.w3.org/ns/prov#qualifiedAssociation" class="treelinks" href="prop-provqualifiedassociation.html">prov:qualifiedAssociation</a></td>
+						  </tr><tr>
+							<td class="tc" colspan=4><a title="http://www.w3.org/ns/prov#used" class="treelinks" href="prop-provused.html">prov:used</a></td>
+						  </tr> <tr>
+							<td class="space"></td>
+							<td class="bar"></td>
+							<td class="space"></td>
+							<td><table class="h"><tr>
+							<td class="tc" colspan=4><a title="http://data.hulib.helsinki.fi/attx/onto#usesArtifact" class="treelinks" href="prop-ontousesartifact.html">onto:usesArtifact</a></td>
+						  </tr></table></td>
+							</tr><tr>
+							<td class="tc" colspan=4><a title="http://www.w3.org/ns/prov#wasAssociatedWith" class="treelinks" href="prop-provwasassociatedwith.html">prov:wasAssociatedWith</a></td>
+						  </tr><tr>
+							<td class="tc" colspan=4><a title="http://www.w3.org/ns/prov#wasDerivedFrom" class="treelinks" href="prop-provwasderivedfrom.html">prov:wasDerivedFrom</a></td>
+						  </tr></table>
 
-            </h3>
-
-        </div>
-
-
-
-
-      <div class="row">
-
-        
-        <div class="col-md-6">
-
-           
-
-           
-
-           <div class="row"><div class="col-md-12">
-              <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Ontology Metadata</h3>
-            </div>
-            <div class="panel-body">
-              
-              <dl>
-                <dt>URI</dt>
-                <dd><code>http://data.hulib.helsinki.fi/attx/onto#</code></dd>
-              </dl>
-                
-                    <dl>
-                        
-                            <dt>dc:creator</dt>
-                            <dd>ATTX project team</dd>
-                        
-                            <dt>dc:date</dt>
-                            <dd>2017-07-04</dd>
-                        
-                            <dt>dc:rights</dt>
-                            <dd>This work is licensed under a Creative Commons Attribution 4.0 International License http://creativecommons.org/licenses/by/4.0/</dd>
-                        
-                            
-                            <dd>This work is licensed under a Creative Commons Attribution 4.0 International License.</dd>
-                        
-                            <dt>owl:versionIRI</dt>
-                            <dd>http://data.hulib.helsinki.fi/attx/onto#</dd>
-                        
-                            <dt>owl:versionInfo</dt>
-                            <dd>ATTX Workflow ontology 2.0</dd>
-                        
-                            <dt>rdf:type</dt>
-                            <dd>http://www.w3.org/2002/07/owl#Ontology</dd>
-                        
-                            <dt>rdfs:comment</dt>
-                            <dd>This ontology is published by the ATTX project, part of the University of Helsinki Library.</dd>
-                        
-                            <dt>rdfs:label</dt>
-                            <dd>ATTX Workflow Ontology</dd>
-                        
-                            <dt>rdfs:seeAlso</dt>
-                            <dd>http://helsinki.fi/library</dd>
-                        
-                    </dl>
-                
-            </div>
-          </div>
-           </div></div>
-           
-        
-
-
-           <div class="row"><div class="col-md-12">
-              <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Metrics</h3>
-            </div>
-            <div class="panel-body">
-                <dl>
-
-                 
-
-                  
-
-                      <dt>Ontologies</dt>
-                      <dd>1</dd>
-
-                  
-
-                    
-
-                  
-
-                      <dt>Triples</dt>
-                      <dd>184</dd>
-
-                  
-
-                    
-
-                  
-
-                      <dt>Classes</dt>
-                      <dd>20</dd>
-
-                  
-
-                    
-
-                  
-
-                      <dt>Properties</dt>
-                      <dd>27</dd>
-
-                  
-
-                    
-
-                  
-
-                      <dt>Annotation Properties</dt>
-                      <dd>6</dd>
-
-                  
-
-                    
-
-                  
-
-                      <dt>Object Properties</dt>
-                      <dd>18</dd>
-
-                  
-
-                    
-
-                  
-
-                      <dt>Datatype Properties</dt>
-                      <dd>3</dd>
-
-                  
-
-                    
-
-                  
-
-                      <dt>Skos Concepts</dt>
-                      <dd>0</dd>
-
-                  
-
-                    
-
-                  
-
-                      <dt>Data Shapes</dt>
-                      <dd>0</dd>
-
-                  
-
-                    
-
-                  
-
-                    
-
-                </dl>
-            </div>
-          </div>
-           </div></div>
-
-
-
-
-        </div>
-         
-
-
-        
-        <div class="col-md-6">
-
-
-          
-            <div class="row">
-              <div class="col-md-12">
-                <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">Namespaces</h3>
-              </div>
-              <div class="panel-body" style="overflow: auto;">
-                 <dl class="-dl-horizontal" style="--margin-left: -100px;">
-
-                 
-                     <dt><span class="label label-info">:</span></dt>
-                     <dd><a href="http://data.hulib.helsinki.fi/attx/onto#" target="_blank">http://data.hulib.helsinki.fi/attx/onto#</a></dd>
-
-                 
-                     <dt><span class="label label-info">cc</span></dt>
-                     <dd><a href="https://creativecommons.org/ns#" target="_blank">https://creativecommons.org/ns#</a></dd>
-
-                 
-                     <dt><span class="label label-info">dc</span></dt>
-                     <dd><a href="http://purl.org/dc/elements/1.1/" target="_blank">http://purl.org/dc/elements/1.1/</a></dd>
-
-                 
-                     <dt><span class="label label-info">dcterms</span></dt>
-                     <dd><a href="http://purl.org/dc/terms/" target="_blank">http://purl.org/dc/terms/</a></dd>
-
-                 
-                     <dt><span class="label label-info">owl</span></dt>
-                     <dd><a href="http://www.w3.org/2002/07/owl#" target="_blank">http://www.w3.org/2002/07/owl#</a></dd>
-
-                 
-                     <dt><span class="label label-info">prov</span></dt>
-                     <dd><a href="http://www.w3.org/ns/prov#" target="_blank">http://www.w3.org/ns/prov#</a></dd>
-
-                 
-                     <dt><span class="label label-info">pwo</span></dt>
-                     <dd><a href="http://purl.org/spar/pwo/" target="_blank">http://purl.org/spar/pwo/</a></dd>
-
-                 
-                     <dt><span class="label label-info">rdf</span></dt>
-                     <dd><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#" target="_blank">http://www.w3.org/1999/02/22-rdf-syntax-ns#</a></dd>
-
-                 
-                     <dt><span class="label label-info">rdfs</span></dt>
-                     <dd><a href="http://www.w3.org/2000/01/rdf-schema#" target="_blank">http://www.w3.org/2000/01/rdf-schema#</a></dd>
-
-                 
-                     <dt><span class="label label-info">sh</span></dt>
-                     <dd><a href="http://www.w3.org/ns/shacl#" target="_blank">http://www.w3.org/ns/shacl#</a></dd>
-
-                 
-                     <dt><span class="label label-info">skos</span></dt>
-                     <dd><a href="http://www.w3.org/2004/02/skos/core#" target="_blank">http://www.w3.org/2004/02/skos/core#</a></dd>
-
-                 
-                     <dt><span class="label label-info">vann</span></dt>
-                     <dd><a href="http://purl.org/vocab/vann/" target="_blank">http://purl.org/vocab/vann/</a></dd>
-
-                 
-                     <dt><span class="label label-info">void</span></dt>
-                     <dd><a href="http://rdfs.org/ns/void#" target="_blank">http://rdfs.org/ns/void#</a></dd>
-
-                 
-                     <dt><span class="label label-info">xml</span></dt>
-                     <dd><a href="http://www.w3.org/XML/1998/namespace" target="_blank">http://www.w3.org/XML/1998/namespace</a></dd>
-
-                 
-                     <dt><span class="label label-info">xsd</span></dt>
-                     <dd><a href="http://www.w3.org/2001/XMLSchema#" target="_blank">http://www.w3.org/2001/XMLSchema#</a></dd>
-
-                 
-
-                </dl>
-              </div>
-            </div>
-              </div>
-            </div>
-            
-        </div>
-         
 
       </div>
+    </div>
+     </div></div>
+
+
 
 
 
@@ -805,6 +629,39 @@ $('#search-input-sidebar').keyup(function() {
 
 
 
+<script type="text/javascript">
+
+// http://stackoverflow.com/questions/9127498/how-to-perform-a-real-time-search-and-filter-on-a-html-table
+
+  $('#search-input').keyup(function() {
+
+    var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
+
+    // var $rows = $(this).next(".entities-list").find("div");
+    var $rows = $(this).parent().next().find(".entities-list tr");
+
+    $rows.show().filter(function() {
+        var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
+        return !~text.indexOf(val);
+    }).hide();
+});
+
+
+</script>
+
+
+
+<!-- Scroll Sidebar Script -->
+
+<script type="text/javascript">
+
+  $(document).ready(function (){
+    $('#sidebar-wrapper').animate({
+        scrollTop: $("#sd_properties").offset().top - 100
+    }, 100);
+  });
+
+</script>
 
 
 
