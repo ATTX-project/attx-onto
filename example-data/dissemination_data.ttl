@@ -1,5 +1,6 @@
-@base <http://helsinki.fi/library/> .
-@prefix kaisa: <http://helsinki.fi/library/onto#> .
+@base <http://data.hulib.helsinki.fi/attx#> .
+@prefix attxonto: <http://data.hulib.helsinki.fi/attx/onto#> .
+@prefix attx: <http://data.hulib.helsinki.fi/attx/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -37,4 +38,4 @@
   schema:author "Author, Name" ;
   bibo:doi "http://dx.doi.org/10.1037/hsl0000003" ;
   lv:urn "urn:isbn:0379500618" ;
-  prov:wasDerivedFrom kaisa:wf2_dataset3 .
+  prov:wasDerivedFrom attx:wf2_dataset3 .
