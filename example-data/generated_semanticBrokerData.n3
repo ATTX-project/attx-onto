@@ -1,0 +1,135 @@
+<http://data.hulib.helsinki.fi/attx/workflow_link_idstrategy3>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>       <http://data.hulib.helsinki.fi/attx/onto#Workflow> ;
+        <http://purl.org/dc/elements/1.1/description>
+                "Workflow specific to the link GM API endpoint" ;
+        <http://purl.org/dc/elements/1.1/title>
+                "Linking Workflow" ;
+        <http://purl.org/spar/pwo/hasStep>
+                <http://data.hulib.helsinki.fi/attx/step3_idstrategy3> , <http://data.hulib.helsinki.fi/attx/step2_idstrategy3> , <http://data.hulib.helsinki.fi/attx/step1_idstrategy3> .
+
+<http://data.hulib.helsinki.fi/attx/step3_idstrategy3>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>       <http://data.hulib.helsinki.fi/attx/onto#Step> ;
+        <http://purl.org/dc/elements/1.1/description>
+                "Add generated linking graph by idstrategy3 to the graph store." ;
+        <http://purl.org/dc/elements/1.1/title>
+                "Add to graph store" .
+
+<http://data.hulib.helsinki.fi/attx/step2_idstrategy3>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>       <http://data.hulib.helsinki.fi/attx/onto#Step> ;
+        <http://purl.org/dc/elements/1.1/description>
+                "Generate linking graph based on strategy parameters." ;
+        <http://purl.org/dc/elements/1.1/title>
+                "Construct linking graph for idstrategy3" ;
+        <http://purl.org/spar/pwo/hasNextStep>
+                <http://data.hulib.helsinki.fi/attx/step3_idstrategy3> .
+
+<http://data.hulib.helsinki.fi/attx/step1_idstrategy3>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>       <http://data.hulib.helsinki.fi/attx/onto#Step> ;
+        <http://purl.org/dc/elements/1.1/description>
+                "Retrieve paramters for the linking for the specified strategy." ;
+        <http://purl.org/dc/elements/1.1/title>
+                "Retrieve idstrategy3 parameters" ;
+        <http://purl.org/spar/pwo/hasNextStep>
+                <http://data.hulib.helsinki.fi/attx/step2_idstrategy3> .
+
+<http://data.hulib.helsinki.fi/attx/ETL>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>       <http://www.w3.org/ns/prov#Agent> ;
+        <http://data.hulib.helsinki.fi/attx/onto#usesArtifact>
+                <http://data.hulib.helsinki.fi/attx/gm_API> .
+
+<http://data.hulib.helsinki.fi/attx/work4>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>       <http://www.w3.org/ns/sparql-service-description#Dataset> , <http://data.hulib.helsinki.fi/attx/onto#Dataset> ;
+        <http://purl.org/dc/elements/1.1/description>
+                "Dataset generated from activity" ;
+        <http://purl.org/dc/elements/1.1/publisher>
+                "ATTX HULib" ;
+        <http://purl.org/dc/elements/1.1/title>
+                "activity6247345291971511 Linking Dataset" .
+
+<http://data.hulib.helsinki.fi/attx/activity6247345291971511>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>       <http://www.w3.org/ns/prov#Activity> , <http://data.hulib.helsinki.fi/attx/onto#WorkflowExecution> ;
+        <http://www.w3.org/ns/prov#endedAtTime>
+                "2017-06-30T08:28:55"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/ns/prov#generated>
+                <http://data.hulib.helsinki.fi/attx/work4> ;
+        <http://www.w3.org/ns/prov#qualifiedAssociation>
+                [ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>       <http://www.w3.org/ns/prov#Assocation> ;
+                  <http://www.w3.org/ns/prov#agent>
+                          <http://data.hulib.helsinki.fi/attx/ETL> ;
+                  <http://www.w3.org/ns/prov#hadPlan>
+                          <http://data.hulib.helsinki.fi/attx/workflow_link_idstrategy3>
+                ] ;
+        <http://www.w3.org/ns/prov#startedAtTime>
+                "2017-06-30T08:28:53"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/ns/prov#used>
+                <http://data.hulib.helsinki.fi/attx/ids> .
+
+<http://data.hulib.helsinki.fi/attx/ids>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>       <http://www.w3.org/ns/sparql-service-description#Dataset> , <http://data.hulib.helsinki.fi/attx/onto#Dataset> .
+
+<http://data.hulib.helsinki.fi/attx/step1_idstrategy1>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>       <http://data.hulib.helsinki.fi/attx/onto#Step> ;
+        <http://purl.org/dc/elements/1.1/description>
+                "Retrieve paramters for the linking for the specified strategy." ;
+        <http://purl.org/dc/elements/1.1/title>
+                "Retrieve idstrategy1 parameters" ;
+        <http://purl.org/spar/pwo/hasNextStep>
+                <http://data.hulib.helsinki.fi/attx/step2_idstrategy1> .
+
+<http://data.hulib.helsinki.fi/attx/step2_idstrategy1>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>       <http://data.hulib.helsinki.fi/attx/onto#Step> ;
+        <http://purl.org/dc/elements/1.1/description>
+                "Generate linking graph based on strategy parameters." ;
+        <http://purl.org/dc/elements/1.1/title>
+                "Construct linking graph for idstrategy1" ;
+        <http://purl.org/spar/pwo/hasNextStep>
+                <http://data.hulib.helsinki.fi/attx/step3_idstrategy1> .
+
+<http://data.hulib.helsinki.fi/attx/workflow_link_idstrategy1>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>       <http://data.hulib.helsinki.fi/attx/onto#Workflow> ;
+        <http://purl.org/dc/elements/1.1/description>
+                "Workflow specific to the link GM API endpoint" ;
+        <http://purl.org/dc/elements/1.1/title>
+                "Linking Workflow" ;
+        <http://purl.org/spar/pwo/hasStep>
+                <http://data.hulib.helsinki.fi/attx/step1_idstrategy1> , <http://data.hulib.helsinki.fi/attx/step2_idstrategy1> , <http://data.hulib.helsinki.fi/attx/step3_idstrategy1> .
+
+<http://data.hulib.helsinki.fi/attx/step3_idstrategy1>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>       <http://data.hulib.helsinki.fi/attx/onto#Step> ;
+        <http://purl.org/dc/elements/1.1/description>
+                "Add generated linking graph by idstrategy1 to the graph store." ;
+        <http://purl.org/dc/elements/1.1/title>
+                "Add to graph store" .
+
+<http://data.hulib.helsinki.fi/attx/work3>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>       <http://www.w3.org/ns/sparql-service-description#Dataset> , <http://data.hulib.helsinki.fi/attx/onto#Dataset> ;
+        <http://purl.org/dc/elements/1.1/description>
+                "Dataset generated from activity" ;
+        <http://purl.org/dc/elements/1.1/publisher>
+                "ATTX HULib" ;
+        <http://purl.org/dc/elements/1.1/title>
+                "activity7154275644277906 Linking Dataset" .
+
+<http://data.hulib.helsinki.fi/attx/activity7154275644277906>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>       <http://www.w3.org/ns/prov#Activity> , <http://data.hulib.helsinki.fi/attx/onto#WorkflowExecution> ;
+        <http://www.w3.org/ns/prov#endedAtTime>
+                "2017-06-30T08:29:10"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/ns/prov#generated>
+                <http://data.hulib.helsinki.fi/attx/work3> ;
+        <http://www.w3.org/ns/prov#qualifiedAssociation>
+                [ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>       <http://www.w3.org/ns/prov#Assocation> ;
+                  <http://www.w3.org/ns/prov#agent>
+                          <http://data.hulib.helsinki.fi/attx/ETL> ;
+                  <http://www.w3.org/ns/prov#hadPlan>
+                          <http://data.hulib.helsinki.fi/attx/workflow_link_idstrategy1>
+                ] ;
+        <http://www.w3.org/ns/prov#startedAtTime>
+                "2017-06-30T08:29:06"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/ns/prov#used>
+                <http://data.hulib.helsinki.fi/attx/work/2> , <http://data.hulib.helsinki.fi/attx/work/1> .
+
+<http://data.hulib.helsinki.fi/attx/work/2>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>       <http://www.w3.org/ns/sparql-service-description#Dataset> , <http://data.hulib.helsinki.fi/attx/onto#Dataset> .
+
+<http://data.hulib.helsinki.fi/attx/work/1>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>       <http://www.w3.org/ns/sparql-service-description#Dataset> , <http://data.hulib.helsinki.fi/attx/onto#Dataset> .
