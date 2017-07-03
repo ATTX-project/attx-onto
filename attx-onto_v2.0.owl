@@ -269,6 +269,15 @@
     
 
 
+    <!-- http://www.w3.org/ns/prov#wasGeneratedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy">
+        <rdfs:comment xml:lang="en">Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation.</rdfs:comment>
+        <rdfs:label xml:lang="en">wasGeneratedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -344,6 +353,7 @@
     <!-- http://data.hulib.helsinki.fi/attx/onto#Artifact -->
 
     <owl:Class rdf:about="http://data.hulib.helsinki.fi/attx/onto#Artifact">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#SoftwareAgent"/>
         <rdfs:comment xml:lang="en">An artifact is a type of mutable or imutable resource used in a specific workflow. Examples: Web Service, source code or any other type of software component and not only.</rdfs:comment>
         <rdfs:label xml:lang="en">Artifact</rdfs:label>
     </owl:Class>
@@ -508,6 +518,16 @@
     <owl:Class rdf:about="http://www.w3.org/ns/prov#Role">
         <rdfs:comment xml:lang="en">A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end.</rdfs:comment>
         <rdfs:label xml:lang="en">Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#SoftwareAgent -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#SoftwareAgent">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdfs:comment xml:lang="en">A software agent is running software.</rdfs:comment>
+        <rdfs:label xml:lang="en">SoftwareAgent</rdfs:label>
     </owl:Class>
     
 

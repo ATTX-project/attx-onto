@@ -17,7 +17,7 @@ attx:wf2
   a attxonto:Workflow ;
   dcterms:title "Acquisition and Mapping the VIRTA pubs data with CRIS data." ;
   dcterms:description "Workflow that uses VIRTA publication data in order to map titles and  identifiers from CRIS data for every publication and research fields."@en ;
-  pwo:hasFirstStep attx:step1 ;
+  pwo:hasFirstStep attx:wf2_step1 ;
   pwo:hasStep
     attx:wf2_step1 ,
     attx:wf2_step2 ,

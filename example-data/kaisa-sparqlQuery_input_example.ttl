@@ -19,7 +19,7 @@ attx:wf3
   a attxonto:Workflow ;
   dcterms:title "Acquisition and Mapping the CRIS pubs data." ;
   dcterms:description "Workflow that uses CRIS publication data in order to map titles and external identifiers for every publication and research fields."@en ;
-  pwo:hasFirstStep attx:step1 ;
+  pwo:hasFirstStep attx:wf3_step1 ;
   pwo:hasStep
     attx:wf3_step1 ,
     attx:wf3_step2 ,
