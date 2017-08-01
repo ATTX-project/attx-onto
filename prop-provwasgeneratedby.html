@@ -412,7 +412,7 @@
           
               <li class="second-level" style="line-height: 20px;" id="sd_49"><a   href="prop-provwasderivedfrom.html">prov:wasDerivedFrom</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_50"><a   href="prop-provwasgeneratedby.html">prov:wasGeneratedBy</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_50"><a class="active"  href="prop-provwasgeneratedby.html">prov:wasGeneratedBy</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_39"><a   href="prop-pwohasfirststep.html">pwo:hasFirstStep</a></li>
           
@@ -422,7 +422,7 @@
           
               <li class="second-level" style="line-height: 20px;" id="sd_26"><a   href="prop-rdfscomment.html">rdfs:comment</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_27"><a class="active"  href="prop-skosaltlabel.html">skos:altLabel</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_27"><a   href="prop-skosaltlabel.html">skos:altLabel</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_28"><a   href="prop-skospreflabel.html">skos:prefLabel</a></li>
           
@@ -521,7 +521,7 @@
           <a href="entities-tree-properties.html">Properties</a>
     </li>
       <li class="active">
-            http://www.w3.org/2004/02/skos/core#altLabel
+            http://www.w3.org/ns/prov#wasGeneratedBy
         </li>
   </ol>
 
@@ -538,7 +538,7 @@
 
             <h1>
 
-                skos:altLabel
+                prov:wasGeneratedBy
                 
                     <small class="label label-info label-xs ">leaf node</small>
                   
@@ -557,7 +557,7 @@
                         <li><a href="entities-tree-properties.html">rdf:Property</a>
 
                           <ul>
-                            <li><a style="font-weight: bold;" title="'altLabel'">skos:altLabel</a>
+                            <li><a style="font-weight: bold;" title="'wasGeneratedBy' - Generation is the completion of production of a new entity by an activity. This entity did not exist before generation ...">prov:wasGeneratedBy</a>
 
                             
                               </li>
@@ -581,7 +581,7 @@
              </div>
              <div class="panel-body">
 
-                 <code>http://www.w3.org/2004/02/skos/core#altLabel</code>
+                 <code>http://www.w3.org/ns/prov#wasGeneratedBy</code>
              </div>
            </div>
             </div></div>
@@ -596,7 +596,7 @@
              </div>
              <div class="panel-body">
 
-                 altLabel
+                 wasGeneratedBy
              </div>
            </div>
             </div></div>
@@ -604,6 +604,18 @@
 
 
             
+            <div class="row"><div class="col-md-12">
+              <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Description</h3>
+            </div>
+            <div class="panel-body">
+
+                Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation.
+            </div>
+          </div>
+           </div></div>
+           
 
 
 
@@ -633,7 +645,7 @@
                    </td>
 
                     <td>
-                      skos:altLabel
+                      prov:wasGeneratedBy
                     </td>
 
                     <td>
@@ -673,7 +685,9 @@
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">xml:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/XML/1998/namespace&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">xsd:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
 
-<span class="nn">skos:</span><span class="nt">altLabel</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">owl:</span><span class="nt">AnnotationProperty</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
+<span class="nn">prov:</span><span class="nt">wasGeneratedBy</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">owl:</span><span class="nt">ObjectProperty</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nn">rdfs:</span><span class="nt">label</span><span class="w"> </span><span class="s">&quot;wasGeneratedBy&quot;</span><span class="o">@</span><span class="ge">en</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nn">rdfs:</span><span class="nt">comment</span><span class="w"> </span><span class="s">&quot;Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation.&quot;</span><span class="o">@</span><span class="ge">en</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
 </pre></div>
 
 
@@ -773,7 +787,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_27").offset().top - 100
+          scrollTop: $("#sd_50").offset().top - 100
       }, 100);
     });
 

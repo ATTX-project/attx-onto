@@ -1,0 +1,64 @@
+buildscript {
+  repositories {
+    jcenter()
+    maven { url "${artifactRepoURL}/repository/attx-releases"}
+  }
+  dependencies {
+    classpath "org.uh.hulib.attx.gradle:gradle-pullrequest-builder:1.6-SNAPSHOT"
+  }
+}
+
+
+apply plugin: "attx.pullrequest.gradle.github"
+apply plugin: 'base'
+
+task buildDocs(type:Exec) {
+  workingDir "${project.projectDir}"
+
+  //on linux
+  commandLine './generate_docs.sh'
+
+  //store the output instead of printing to the console:
+  standardOutput = new ByteArrayOutputStream()
+
+  //extension method stopTomcat.output() can be used to obtain the output:
+  ext.output = {
+    return standardOutput.toString()
+  }
+}
+
+
+task distributeDocs(type: Copy) {
+    dependsOn buildDocs
+    from "${project.projectDir}/new"
+    into "${project.projectDir}"
+}
+
+gitCommit.dependsOn distributeDocs
+
+gitPullRequest {
+    // where to publish to (repo must exist)
+    githubUri = 'https://github.com/ATTX-project/attx-onto'
+
+    // github user name to use
+    user = "${user}"
+
+    // github password or better access token
+    accessToken = "${token}"
+
+    // the name the branch should start with (will be added by timestamp to avoid collisions)
+    branchSuffix = 'dev'
+
+    // the target branch to send pull request to
+    master = 'master'
+
+    // // optional, the folder to commit all new or changed files from (default=src)
+    // source = '.'
+
+    // optional, the title of the pull request
+    title = "Automatic pull request: Jenkins build#${jenkinsBuild}"
+
+    // // optional, the message of the commit
+    message = "Commited by Jenkins build#${jenkinsBuild}."
+
+}
