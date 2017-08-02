@@ -8,7 +8,6 @@ buildscript {
   }
 }
 
-
 apply plugin: "attx.pullrequest.gradle.github"
 apply plugin: 'base'
 
