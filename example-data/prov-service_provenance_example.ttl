@@ -57,11 +57,11 @@ attx:step1
       prov:hadRole attx:Transformer ;
     ] ;
     prov:used
-        attx:rmlframe1 ,
+        attx:frame1 ,
         attx:inputGraphURIs ;
     prov:qualifiedUsage [
       a prov:Usage;
-      prov:entity  attx:rmlframe1 ;
+      prov:entity  attx:frame1 ;
       prov:hadRole attx:Configuration ;
     ] ;
     prov:qualifiedUsage [
@@ -73,7 +73,7 @@ attx:step1
 
 attx:transform1
     a prov:Activity ;
-    prov:wasAssociatedWith attx:RMLTransformer ;
+    prov:wasAssociatedWith attx:FramerTransformer ;
     prov:startedAtTime  "2017-08-02T13:52:29+02:00"^^xsd:dateTime ;
     prov:endedAtTime "2017-08-02T15:03:47+02:00"^^xsd:dateTime ;
     prov:qualifiedCommunication [
@@ -95,10 +95,15 @@ attx:GMAPI
    dcterms:source <github> ;
    dcterms:description "GMAPI service".
 
-attx:RMLTransformer
+attx:ES5
+   a prov:Agent ;
+   dcterms:source <http://elasti.co> ;
+   dcterms:description "ES5 service".
+
+attx:FramerTransformer
     a prov:Agent ;
     dcterms:source <github> ;
-    dcterms:description "RMLTransformer service" .
+    dcterms:description "JSON-LD frame based transformer service" .
 
 attx:step2
   a prov:Activity, attxonto:Step ;
@@ -106,21 +111,51 @@ attx:step2
   prov:startedAtTime  "2017-08-02T13:52:29+02:00"^^xsd:dateTime ;
   prov:endedAtTime "2017-08-02T15:03:47+02:00"^^xsd:dateTime ;
   prov:qualifiedAssociation [
-    a prov:Association ;
-    prov:agent attx:IndexingService ;
-    prov:hadRole attx:Loader ;
+      a prov:Association ;
+      prov:agent attx:UV ;
+      prov:hadRole attx:ETL ;
   ] ;
-  prov:qualifiedAssociation [
-    a prov:Association ;
-    prov:agent attx:ES5 ;
-    prov:hadRole attx:DistributionComponent ;
+  prov:qualifiedCommunication [
+    a prov:prov:Communication ;
+    prov:activity attx:index1 ;
+    prov:hadRole attx:Loader ;
   ] ;
   prov:used
     <file://file.with/json-result.json> ,
     attx:ES5 ,
-    <http://es5/documents_index> .
+    <http://es5/documents_index> ;
+  prov:qualifiedUsage [
+    a prov:Usage;
+    prov:entity  attx:ES5 ;
+    prov:hadRole attx:Service ;
+  ] ;
+  prov:generated <http://platform/public/rest/documents> .
 
-attx:rmlframe1
+
+attx:index1
+    a prov:Activity ;
+    prov:wasAssociatedWith attx:indexService ;
+    prov:startedAtTime  "2017-08-02T13:52:29+02:00"^^xsd:dateTime ;
+    prov:endedAtTime "2017-08-02T15:03:47+02:00"^^xsd:dateTime ;
+    
+    prov:qualifiedCommunication [
+        a prov:prov:Communication ;
+        prov:activity attx:index2 ;
+    ] ;
+    prov:used <file://file.with/json-result.json> ;
+    prov:generated <http://es5/documents_index> .
+
+
+attx:index2
+   a prov:Activity ;
+   prov:wasAssociatedWith attx:ES5 ;
+   prov:startedAtTime  "2017-08-02T13:52:29+02:00"^^xsd:dateTime ;
+   prov:endedAtTime "2017-08-02T15:03:47+02:00"^^xsd:dateTime ;
+   prov:used <http://es5/documents_index>  ;
+   prov:generated  <http://platform/public/rest/documents> .
+
+
+attx:frame1
     a prov:Entity ;
     dcterms:source <http://prov-service.files.path/frame1.json> .
 
