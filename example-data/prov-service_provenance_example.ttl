@@ -1,0 +1,131 @@
+@base <http://data.hulib.helsinki.fi/attx#> .
+@prefix attxonto: <http://data.hulib.helsinki.fi/attx/onto#> .
+@prefix attx: <http://data.hulib.helsinki.fi/attx/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix pwo: <http://purl.org/spar/pwo/> .
+@prefix schema: <http://schema.org/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+
+attx:publishData
+  a prov:Activity, attxonto:WorkflowExecution ;
+  prov:startedAtTime  "2017-08-01T13:52:29+02:00"^^xsd:dateTime ;
+  prov:endedAtTime "2017-08-03T15:03:47+02:00"^^xsd:dateTime ;
+  prov:qualifiedAssociation [
+    a prov:Association ;
+    prov:agent attx:UV ;
+    prov:hadRole attx:ETL ;
+    prov:hadPlan attx:workflow_ex1_stepHASH_CONFIGURATIOn ;
+  ] ;
+  prov:used attx:dataset1 ;
+  prov:generated attx:dataset2 .
+
+attx:dataset2
+    a attxonto:Dataset, sd:Dataset ;
+    dcterms:title "Selected CRIS Publication Data in RDF" ;
+    dcterms:description "Dataset includes titles and external identifiers for every publication and research fields, see mapping steps for details"@en;
+    prov:wasGeneratedBy attx:publishData ;
+    dcterms:license <http://creativecommons.org/licenses/by/4.0/> .
+
+attx:workflow_ex1_stepHASH_CONFIGURATIOn
+  a prov:Plan, attxonto:Workflow ;
+  pwo:hasFirstStep attx:step1 ;
+  pwo:hasStep
+    attx:step1 ,
+    attx:step2 .
+
+attx:step1
+    a prov:Activity, attxonto:Step ;
+    dcterms:title "Transform RDF" ;
+    prov:startedAtTime  "2017-08-02T13:52:29+02:00"^^xsd:dateTime ;
+    prov:endedAtTime "2017-08-02T15:03:47+02:00"^^xsd:dateTime ;
+    prov:qualifiedAssociation [
+        a prov:Association ;
+        prov:agent attx:UV ;
+        prov:hadRole attx:ETL ;
+    ] ;
+    prov:qualifiedCommunication [
+      a prov:prov:Communication ;
+      prov:activity attx:transform1 ;
+      prov:hadRole attx:Transformer ;
+    ] ;
+    prov:used
+        attx:rmlframe1 ,
+        attx:inputGraphURIs ;
+    prov:qualifiedUsage [
+      a prov:Usage;
+      prov:entity  attx:rmlframe1 ;
+      prov:hadRole attx:Configuration ;
+    ] ;
+    prov:qualifiedUsage [
+        a prov:Usage;
+        prov:entity  attx:inputGraphURIs ;
+        prov:hadRole attx:InputGraph ;
+    ] ;
+    prov:generated <file://file.with/json-result.json> .
+
+attx:transform1
+    a prov:Activity ;
+    prov:wasAssociatedWith attx:RMLTransformer ;
+    prov:startedAtTime  "2017-08-02T13:52:29+02:00"^^xsd:dateTime ;
+    prov:endedAtTime "2017-08-02T15:03:47+02:00"^^xsd:dateTime ;
+    prov:qualifiedCommunication [
+        a prov:prov:Communication ;
+        prov:activity attx:store1 ;
+    ] ;
+    prov:used attx:tempGraph ;
+    prov:generated <file://file.with/json-result.json> .
+
+attx:store1
+   a prov:Activity ;
+   prov:wasAssociatedWith attx:GMAPI ;
+   prov:startedAtTime  "2017-08-02T13:52:29+02:00"^^xsd:dateTime ;
+   prov:endedAtTime "2017-08-02T15:03:47+02:00"^^xsd:dateTime ;
+   prov:generated attx:tempGraph .
+
+attx:GMAPI
+   a prov:Agent ;
+   dcterms:source <github> ;
+   dcterms:description "GMAPI service".
+
+attx:RMLTransformer
+    a prov:Agent ;
+    dcterms:source <github> ;
+    dcterms:description "RMLTransformer service" .
+
+attx:step2
+  a prov:Activity, attxonto:Step ;
+  dcterms:title "Publish to service" ;
+  prov:startedAtTime  "2017-08-02T13:52:29+02:00"^^xsd:dateTime ;
+  prov:endedAtTime "2017-08-02T15:03:47+02:00"^^xsd:dateTime ;
+  prov:qualifiedAssociation [
+    a prov:Association ;
+    prov:agent attx:IndexingService ;
+    prov:hadRole attx:Loader ;
+  ] ;
+  prov:qualifiedAssociation [
+    a prov:Association ;
+    prov:agent attx:ES5 ;
+    prov:hadRole attx:DistributionComponent ;
+  ] ;
+  prov:used
+    <file://file.with/json-result.json> ,
+    attx:ES5 ,
+    <http://es5/documents_index> .
+
+attx:rmlframe1
+    a prov:Entity ;
+    dcterms:source <http://prov-service.files.path/frame1.json> .
+
+attx:inputGraphURIs
+    a prov:Entity ;
+    dcterms:source
+        attx:dataset1 ,
+        attx:dataset2 .
