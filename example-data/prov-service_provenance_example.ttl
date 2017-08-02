@@ -32,6 +32,7 @@ attx:dataset2
     dcterms:title "Selected CRIS Publication Data in RDF" ;
     dcterms:description "Dataset includes titles and external identifiers for every publication and research fields, see mapping steps for details"@en;
     prov:wasGeneratedBy attx:publishData ;
+    dcterms:source <http://platform/public/rest/documents> ;
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> .
 
 attx:workflow_ex1_stepHASH_CONFIGURATIOn
