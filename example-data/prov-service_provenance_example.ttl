@@ -57,19 +57,7 @@ attx:step1
       prov:activity attx:transform1 ;
       prov:hadRole attx:Transformer ;
     ] ;
-    prov:used
-        attx:frame1 ,
-        attx:inputGraphURIs ;
-    prov:qualifiedUsage [
-      a prov:Usage;
-      prov:entity  attx:frame1 ;
-      prov:hadRole attx:Configuration ;
-    ] ;
-    prov:qualifiedUsage [
-        a prov:Usage;
-        prov:entity  attx:inputGraphURIs ;
-        prov:hadRole attx:InputGraph ;
-    ] ;
+    prov:used attx:dataset1 ;
     prov:generated <file://file.with/json-result.json> .
 
 attx:transform1
@@ -81,7 +69,19 @@ attx:transform1
         a prov:prov:Communication ;
         prov:activity attx:store1 ;
     ] ;
-    prov:used attx:tempGraph ;
+    prov:used
+        attx:frame1 ;
+        attx:inputGraphURIs ;
+    prov:qualifiedUsage [
+      a prov:Usage;
+      prov:entity  attx:frame1 ;
+      prov:hadRole attx:Configuration ;
+    ] ;
+    prov:qualifiedUsage [
+        a prov:Usage;
+        prov:entity  attx:inputGraphURIs ;
+        prov:hadRole attx:InputGraph ;
+    ] ;    
     prov:generated <file://file.with/json-result.json> .
 
 attx:store1
@@ -89,7 +89,7 @@ attx:store1
    prov:wasAssociatedWith attx:GMAPI ;
    prov:startedAtTime  "2017-08-02T13:52:29+02:00"^^xsd:dateTime ;
    prov:endedAtTime "2017-08-02T15:03:47+02:00"^^xsd:dateTime ;
-   prov:generated attx:tempGraph .
+   prov:generated attx:inputGraphURIs .
 
 attx:GMAPI
    a prov:Agent ;
