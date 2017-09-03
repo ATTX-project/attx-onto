@@ -332,13 +332,13 @@
           
               <li class="second-level" style="line-height: 20px;" id="sd_5"><a  href="class-ontodataset.html">onto:Dataset</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_6"><a  href="class-ontodescribestepexecution.html">onto:DescribeStepExecution</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_6"><a class="active" href="class-ontodescribestepexecution.html">onto:DescribeStepExecution</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_7"><a  href="class-ontodisseminationworkflow.html">onto:DisseminationWorkflow</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_8"><a  href="class-ontodistributionstep.html">onto:DistributionStep</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_9"><a class="active" href="class-ontoenrichmentworkflow.html">onto:EnrichmentWorkflow</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_9"><a  href="class-ontoenrichmentworkflow.html">onto:EnrichmentWorkflow</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_10"><a  href="class-ontoinputstep.html">onto:InputStep</a></li>
           
@@ -531,7 +531,7 @@
           <a href="entities-tree-classes.html">Classes</a>
     </li>
       <li class="active">
-            http://data.hulib.helsinki.fi/attx/onto#EnrichmentWorkflow
+            http://data.hulib.helsinki.fi/attx/onto#DescribeStepExecution
         </li>
   </ol>
 
@@ -559,7 +559,7 @@
 
             <h1>
 
-                onto:EnrichmentWorkflow
+                onto:DescribeStepExecution
                 
                     <small class="label label-info label-xs">leaf node</small>
                   
@@ -578,11 +578,11 @@
 
                         <li>
 
-                          <a href="class-ontoworkflow.html" title="'Workflow' - A sequence of dependent steps, representing a series of activities that make use of certain Artifacts and Datasets. A workflow ...">onto:Workflow</a>
+                          <a href="class-ontostepexecution.html" title="'Step Execution' - A specif action/type of activity performed in an Workflow, that may have associated a start time and an end time, ...">onto:StepExecution</a>
 
                           <ul>
 
-                            <li><a style="font-weight: bold;" title="'Enrichment Workflow' - A sequence steps that have the main purpose of enriching information from a specific Dataset. The act of enriching can ...">onto:EnrichmentWorkflow</a>
+                            <li><a style="font-weight: bold;" title="'Describe Step'">onto:DescribeStepExecution</a>
                             
                               </li>
 
@@ -607,7 +607,7 @@
             </div>
             <div class="panel-body">
 
-                <code>http://data.hulib.helsinki.fi/attx/onto#EnrichmentWorkflow</code>
+                <code>http://data.hulib.helsinki.fi/attx/onto#DescribeStepExecution</code>
             </div>
           </div>
            </div></div>
@@ -620,7 +620,7 @@
             </div>
             <div class="panel-body">
 
-                Enrichment Workflow
+                Describe Step
             </div>
           </div>
            </div></div>
@@ -628,18 +628,6 @@
 
 
 
-           
-            <div class="row"><div class="col-md-12">
-              <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Description</h3>
-            </div>
-            <div class="panel-body">
-
-                A sequence steps that have the main purpose of enriching information from a specific Dataset. The act of enriching can be performed by a specific artifact and can vary from simple linkage and/or adding new properties to complex inferecing.
-            </div>
-          </div>
-           </div></div>
            
 
 
@@ -654,7 +642,7 @@
             <div class="panel-body">
 
             
-                    <li><a href="class-ontoworkflow.html" title="http://data.hulib.helsinki.fi/attx/onto#Workflow">onto:Workflow</a></li><li><a href="class-provplan.html" title="http://www.w3.org/ns/prov#Plan">prov:Plan</a></li>
+                    <li><a href="class-ontostepexecution.html" title="http://data.hulib.helsinki.fi/attx/onto#StepExecution">onto:StepExecution</a></li><li><a href="class-provactivity.html" title="http://www.w3.org/ns/prov#Activity">prov:Activity</a></li>
             
 
             </div>
@@ -676,7 +664,7 @@
             </div>
             <div class="panel-body" style="overflow: auto;">
 
-                <p>Instances of onto:EnrichmentWorkflow can have the following properties:</p>
+                <p>Instances of onto:DescribeStepExecution can have the following properties:</p>
             </div>
              <table class="table table-bordered" style="overflow: auto;">
 
@@ -699,27 +687,27 @@
                     
 
                         <tr class="table-inheritanceinfo">
-                            <th colspan="4" class="treeinfo"><span class="label label-default">From class <a title="onto:Workflow" href="class-ontoworkflow.html" class="fromclass_link">onto:Workflow</a></span>
+                            <th colspan="4" class="treeinfo"><span class="label label-default">From class <a title="onto:StepExecution" href="class-ontostepexecution.html" class="fromclass_link">onto:StepExecution</a></span>
                             </th>
                         </tr>
 
                             
                             <tr>
                                 <td class="firsttd">
-                                    <a class="propcolor" title="onto:usesWorkflowExecution" href="prop-ontousesworkflowexecution.html">onto:usesWorkflowExecution</a>
+                                    <a class="propcolor" title="onto:hasAssociatedGraph" href="prop-ontohasassociatedgraph.html">onto:hasAssociatedGraph</a>
                                 </td>
                                 <td class="secondtd">
                                     <i>owl:ObjectProperty<i>
                                 </td>
                                 <td class="thirdtd">
-                                    <span>Specify the Workflow Execution associated with a current Workflow.</span>
+                                    <span>A Step can make use of a certain graph/dataset besides the input graph.</span>
                                 </td>
                                 <td class="fourthtd">
                                     
                                     
 
                                         
-                                          <a title="onto:WorkflowExecution" href="class-ontoworkflowexecution.html" class="rdfclass">onto:WorkflowExecution</a>
+                                          <a title="onto:Dataset" href="class-ontodataset.html" class="rdfclass">onto:Dataset</a>
                                         
 
 
@@ -731,13 +719,13 @@
                             
                             <tr>
                                 <td class="firsttd">
-                                    <a class="propcolor" title="pwo:hasFirstStep" href="prop-pwohasfirststep.html">pwo:hasFirstStep</a>
+                                    <a class="propcolor" title="pwo:hasNextStep" href="prop-pwohasnextstep.html">pwo:hasNextStep</a>
                                 </td>
                                 <td class="secondtd">
                                     <i>owl:ObjectProperty<i>
                                 </td>
                                 <td class="thirdtd">
-                                    <span>A workflow that starts with a particular step.</span>
+                                    <span>A property linking a step in a workflow with the step that directly follows it.</span>
                                 </td>
                                 <td class="fourthtd">
                                     
@@ -754,22 +742,125 @@
                             </tr>
 
                             
+
+                    
+
+                    
+
+                
+
+                    
+
+                    
+
+                        <tr class="table-inheritanceinfo">
+                            <th colspan="4" class="treeinfo"><span class="label label-default">From class <a title="prov:Activity" href="class-provactivity.html" class="fromclass_link">prov:Activity</a></span>
+                            </th>
+                        </tr>
+
+                            
                             <tr>
                                 <td class="firsttd">
-                                    <a class="propcolor" title="pwo:hasStep" href="prop-pwohasstep.html">pwo:hasStep</a>
+                                    <a class="propcolor" title="prov:endedAtTime" href="prop-provendedattime.html">prov:endedAtTime</a>
                                 </td>
                                 <td class="secondtd">
-                                    <i>owl:ObjectProperty<i>
+                                    <i>owl:DatatypeProperty<i>
                                 </td>
                                 <td class="thirdtd">
-                                    <span>The property linking a workflow to a component step.</span>
+                                    <span>End is when an activity is deemed to have been ended by an entity, known as trigger. The activity no longer exists after its end. Any usage, generation, or invalidation involving an activity precedes the activity&#39;s end. An end may refer to a trigger entity that terminated the activity, or to an activity, known as ender that generated the trigger.</span>
                                 </td>
                                 <td class="fourthtd">
                                     
                                     
 
                                         
-                                          <a title="onto:StepExecution" href="class-ontostepexecution.html" class="rdfclass">onto:StepExecution</a>
+                                          <i>xsd:dateTime</i>
+                                        
+
+
+                                    
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="prov:startedAtTime" href="prop-provstartedattime.html">prov:startedAtTime</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:DatatypeProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>Start is when an activity is deemed to have been started by an entity, known as trigger. The activity did not exist before its start. Any usage, generation, or invalidation involving an activity follows the activity&#39;s start. A start may refer to a trigger entity that set off the activity, or to an activity, known as starter, that generated the trigger.</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                    
+
+                                        
+                                          <i>xsd:dateTime</i>
+                                        
+
+
+                                    
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="prov:generated" href="prop-provgenerated.html">prov:generated</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:ObjectProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation.</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="prov:used" href="prop-provused.html">prov:used</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:ObjectProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>Usage is the beginning of utilizing an entity by an activity. Before usage, the activity had not begun to utilize this entity and could not have been affected by the entity.</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="prov:wasAssociatedWith" href="prop-provwasassociatedwith.html">prov:wasAssociatedWith</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:ObjectProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity. It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity.</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                    
+
+                                        
+                                          <a title="prov:Agent" href="class-provagent.html" class="rdfclass">prov:Agent</a>
                                         
 
 
@@ -1132,10 +1223,9 @@
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">xml:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/XML/1998/namespace&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">xsd:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
 
-<span class="nn">:</span><span class="nt">EnrichmentWorkflow</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">owl:</span><span class="nt">Class</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="nn">rdfs:</span><span class="nt">label</span><span class="w"> </span><span class="s">&quot;Enrichment Workflow&quot;</span><span class="o">@</span><span class="ge">en</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="nn">rdfs:</span><span class="nt">comment</span><span class="w"> </span><span class="s">&quot;A sequence steps that have the main purpose of enriching information from a specific Dataset. The act of enriching can be performed by a specific artifact and can vary from simple linkage and/or adding new properties to complex inferecing.&quot;</span><span class="o">@</span><span class="ge">en</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="nn">rdfs:</span><span class="nt">subClassOf</span><span class="w"> </span><span class="nn">:</span><span class="nt">Workflow</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
+<span class="nn">:</span><span class="nt">DescribeStepExecution</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">owl:</span><span class="nt">Class</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nn">rdfs:</span><span class="nt">label</span><span class="w"> </span><span class="s">&quot;Describe Step&quot;</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nn">rdfs:</span><span class="nt">subClassOf</span><span class="w"> </span><span class="nn">:</span><span class="nt">StepExecution</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
 </pre></div>
 
 
@@ -1236,7 +1326,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_9").offset().top - 100
+          scrollTop: $("#sd_6").offset().top - 100
       }, 100);
     });
 
