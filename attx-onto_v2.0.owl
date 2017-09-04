@@ -15,8 +15,8 @@
     <owl:Ontology rdf:about="http://data.hulib.helsinki.fi/attx/onto#">
         <owl:versionIRI rdf:resource="http://data.hulib.helsinki.fi/attx/onto#"/>
         <rdfs:comment xml:lang="en">This ontology is published by the ATTX project, part of the University of Helsinki Library.</rdfs:comment>
+        <dc:date>2017-08-09</dc:date>
         <owl:versionInfo xml:lang="en">ATTX Workflow ontology 2.0</owl:versionInfo>
-        <dc:date>2017-07-04</dc:date>
         <rdfs:seeAlso xml:lang="en">http://helsinki.fi/library</rdfs:seeAlso>
         <dc:creator>ATTX project team</dc:creator>
         <rdfs:label xml:lang="en">ATTX Workflow Ontology</rdfs:label>
@@ -106,7 +106,7 @@
     <!-- http://data.hulib.helsinki.fi/attx/onto#hasAssociatedGraph -->
 
     <owl:ObjectProperty rdf:about="http://data.hulib.helsinki.fi/attx/onto#hasAssociatedGraph">
-        <rdfs:domain rdf:resource="http://data.hulib.helsinki.fi/attx/onto#Step"/>
+        <rdfs:domain rdf:resource="http://data.hulib.helsinki.fi/attx/onto#StepExecution"/>
         <rdfs:range rdf:resource="http://data.hulib.helsinki.fi/attx/onto#Dataset"/>
         <rdfs:comment xml:lang="en">A Step can make use of a certain graph/dataset besides the input graph.</rdfs:comment>
         <rdfs:label xml:lang="en">hasAssociatedGraph</rdfs:label>
@@ -160,7 +160,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/spar/pwo/hasFirstStep">
         <rdfs:domain rdf:resource="http://data.hulib.helsinki.fi/attx/onto#Workflow"/>
-        <rdfs:range rdf:resource="http://data.hulib.helsinki.fi/attx/onto#Step"/>
+        <rdfs:range rdf:resource="http://data.hulib.helsinki.fi/attx/onto#StepExecution"/>
         <rdfs:comment xml:lang="en">A workflow that starts with a particular step.</rdfs:comment>
         <rdfs:label xml:lang="en">has first step</rdfs:label>
     </owl:ObjectProperty>
@@ -170,8 +170,8 @@
     <!-- http://purl.org/spar/pwo/hasNextStep -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/spar/pwo/hasNextStep">
-        <rdfs:domain rdf:resource="http://data.hulib.helsinki.fi/attx/onto#Step"/>
-        <rdfs:range rdf:resource="http://data.hulib.helsinki.fi/attx/onto#Step"/>
+        <rdfs:domain rdf:resource="http://data.hulib.helsinki.fi/attx/onto#StepExecution"/>
+        <rdfs:range rdf:resource="http://data.hulib.helsinki.fi/attx/onto#StepExecution"/>
         <rdfs:comment xml:lang="en">A property linking a step in a workflow with the step that directly follows it.</rdfs:comment>
         <rdfs:label xml:lang="en">has next step</rdfs:label>
     </owl:ObjectProperty>
@@ -182,7 +182,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/spar/pwo/hasStep">
         <rdfs:domain rdf:resource="http://data.hulib.helsinki.fi/attx/onto#Workflow"/>
-        <rdfs:range rdf:resource="http://data.hulib.helsinki.fi/attx/onto#Step"/>
+        <rdfs:range rdf:resource="http://data.hulib.helsinki.fi/attx/onto#StepExecution"/>
         <rdfs:comment xml:lang="en">The property linking a workflow to a component step.</rdfs:comment>
         <rdfs:label xml:lang="en">has step</rdfs:label>
     </owl:ObjectProperty>
@@ -369,6 +369,15 @@
     
 
 
+    <!-- http://data.hulib.helsinki.fi/attx/onto#DescribeStepExecution -->
+
+    <owl:Class rdf:about="http://data.hulib.helsinki.fi/attx/onto#DescribeStepExecution">
+        <rdfs:subClassOf rdf:resource="http://data.hulib.helsinki.fi/attx/onto#StepExecution"/>
+        <rdfs:label>Describe Step</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://data.hulib.helsinki.fi/attx/onto#DisseminationWorkflow -->
 
     <owl:Class rdf:about="http://data.hulib.helsinki.fi/attx/onto#DisseminationWorkflow">
@@ -382,7 +391,7 @@
     <!-- http://data.hulib.helsinki.fi/attx/onto#DistributionStep -->
 
     <owl:Class rdf:about="http://data.hulib.helsinki.fi/attx/onto#DistributionStep">
-        <rdfs:subClassOf rdf:resource="http://data.hulib.helsinki.fi/attx/onto#Step"/>
+        <rdfs:subClassOf rdf:resource="http://data.hulib.helsinki.fi/attx/onto#StepExecution"/>
         <rdfs:comment xml:lang="en">A specif action/type of activity performed in an Workflow, that has associated an output (always a Working Data Graph) at the end of the Workflow.</rdfs:comment>
         <rdfs:label xml:lang="en">Distribution Step</rdfs:label>
     </owl:Class>
@@ -402,7 +411,7 @@
     <!-- http://data.hulib.helsinki.fi/attx/onto#InputStep -->
 
     <owl:Class rdf:about="http://data.hulib.helsinki.fi/attx/onto#InputStep">
-        <rdfs:subClassOf rdf:resource="http://data.hulib.helsinki.fi/attx/onto#Step"/>
+        <rdfs:subClassOf rdf:resource="http://data.hulib.helsinki.fi/attx/onto#StepExecution"/>
         <rdfs:comment xml:lang="en">A specif action/type of activity performed in an Workflow, that has associated an input (always a Data Graph) at the beginning of the Workflow.</rdfs:comment>
         <rdfs:label xml:lang="en">Input Step</rdfs:label>
     </owl:Class>
@@ -430,19 +439,27 @@
     <!-- http://data.hulib.helsinki.fi/attx/onto#ProcessingStep -->
 
     <owl:Class rdf:about="http://data.hulib.helsinki.fi/attx/onto#ProcessingStep">
-        <rdfs:subClassOf rdf:resource="http://data.hulib.helsinki.fi/attx/onto#Step"/>
+        <rdfs:subClassOf rdf:resource="http://data.hulib.helsinki.fi/attx/onto#StepExecution"/>
         <rdfs:comment xml:lang="en">A specif action/type of activity performed in an Workflow, that registeres Metadata specific information about the current Workflow. This Step can be performed imediately after the InputStep or at any other point in the Workflow but not after the OutputStep.</rdfs:comment>
         <rdfs:label xml:lang="en">Processing Step</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://data.hulib.helsinki.fi/attx/onto#Step -->
+    <!-- http://data.hulib.helsinki.fi/attx/onto#ServiceExecution -->
 
-    <owl:Class rdf:about="http://data.hulib.helsinki.fi/attx/onto#Step">
+    <owl:Class rdf:about="http://data.hulib.helsinki.fi/attx/onto#ServiceExecution">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://data.hulib.helsinki.fi/attx/onto#StepExecution -->
+
+    <owl:Class rdf:about="http://data.hulib.helsinki.fi/attx/onto#StepExecution">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:comment xml:lang="en">A specif action/type of activity performed in an Workflow, that may have associated a start time and an end time, and may be associated with one or more Artifacts.</rdfs:comment>
-        <rdfs:label xml:lang="en">Step</rdfs:label>
+        <rdfs:label xml:lang="en">Step Execution</rdfs:label>
     </owl:Class>
     
 
