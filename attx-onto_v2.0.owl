@@ -289,6 +289,15 @@
     
 
 
+    <!-- http://data.hulib.helsinki.fi/attx/onto#hasConfig -->
+
+    <owl:DatatypeProperty rdf:about="http://data.hulib.helsinki.fi/attx/onto#hasConfig">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://data.hulib.helsinki.fi/attx/onto#hasStatus -->
 
     <owl:DatatypeProperty rdf:about="http://data.hulib.helsinki.fi/attx/onto#hasStatus">
