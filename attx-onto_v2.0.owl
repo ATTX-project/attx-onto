@@ -289,9 +289,32 @@
     
 
 
+    <!-- http://data.hulib.helsinki.fi/attx/onto#hasConfig -->
+
+    <owl:DatatypeProperty rdf:about="http://data.hulib.helsinki.fi/attx/onto#hasConfig">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">An Activity can have different configurations associated to with which specifies paramters for executing the activity.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasConfig</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.hulib.helsinki.fi/attx/onto#hasStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://data.hulib.helsinki.fi/attx/onto#hasStatus">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">An Activity should have a status with respect to its finality. Possible values: &quot;failed&quot;, &quot;success&quot;, &quot;warning&quot;.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasStatus</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://data.hulib.helsinki.fi/attx/onto#hasStepConfig -->
 
     <owl:DatatypeProperty rdf:about="http://data.hulib.helsinki.fi/attx/onto#hasStepConfig">
+        <rdfs:subPropertyOf rdf:resource="http://data.hulib.helsinki.fi/attx/onto#hasConfig"/>
         <rdfs:comment xml:lang="en">A Step can have different configurations associated to with which specifies the Workflow how to perform the given step.</rdfs:comment>
         <rdfs:label xml:lang="en">hasStepConfig</rdfs:label>
     </owl:DatatypeProperty>

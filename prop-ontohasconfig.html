@@ -362,7 +362,7 @@
           
               <li class="second-level" style="line-height: 20px;" id="sd_20"><a  href="class-provassociation.html">prov:Association</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_21"><a class="active" href="class-provinfluence.html">prov:Influence</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_21"><a  href="class-provinfluence.html">prov:Influence</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_22"><a  href="class-provplan.html">prov:Plan</a></li>
           
@@ -390,7 +390,7 @@
           
               <li class="second-level" style="line-height: 20px;" id="sd_38"><a   href="prop-ontohasassociatedgraph.html">onto:hasAssociatedGraph</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_31"><a   href="prop-ontohasconfig.html">onto:hasConfig</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_31"><a class="active"  href="prop-ontohasconfig.html">onto:hasConfig</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_32"><a   href="prop-ontohasstatus.html">onto:hasStatus</a></li>
           
@@ -473,15 +473,16 @@
 
 
 
-
-
         
-
-
 
 
         
             
+
+
+
+
+
 
 
 
@@ -532,17 +533,12 @@
           <a href="entities-az.html">Entities</a>
     </li>
     <li>
-          <a href="entities-tree-classes.html">Classes</a>
+          <a href="entities-tree-properties.html">Properties</a>
     </li>
       <li class="active">
-            http://www.w3.org/ns/prov#Influence
+            http://data.hulib.helsinki.fi/attx/onto#hasConfig
         </li>
   </ol>
-
-
-
-
-
 
 
 
@@ -559,16 +555,13 @@
 
 
 
-
-
             <h1>
 
-                prov:Influence
+                onto:hasConfig
                 
-                    <small class="label label-info label-xs">leaf node</small>
-                  
 
             </h1>
+
             <hr>
 
 
@@ -578,11 +571,15 @@
                 <ul>
                     
 
-                        <li><a href="entities-tree-classes.html">owl:Thing</a>
+                        <li><a href="entities-tree-properties.html">rdf:Property</a>
 
                           <ul>
-                            <li><a style="font-weight: bold;" title="'Influence' - Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior ...">prov:Influence</a>
+                            <li><a style="font-weight: bold;" title="'hasConfig' - An Activity can have different configurations associated to with which specifies paramters for executing the activity.">onto:hasConfig</a>
 
+                            
+                                <ul>
+                                  <li><a href="prop-ontohasstepconfig.html" title="'hasStepConfig' - A Step can have different configurations associated to with which specifies the Workflow how to perform the given step.">onto:hasStepConfig</a></li>
+                                </ul>
                             
                               </li>
 
@@ -598,35 +595,36 @@
 
 
 
-           <div class="row"><div class="col-md-12">
-              <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">URI</h3>
-            </div>
-            <div class="panel-body">
-
-                <code>http://www.w3.org/ns/prov#Influence</code>
-            </div>
-          </div>
-           </div></div>
-
-           
             <div class="row"><div class="col-md-12">
-              <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Label</h3>
-            </div>
-            <div class="panel-body">
+               <div class="panel panel-default">
+             <div class="panel-heading">
+               <h3 class="panel-title">URI</h3>
+             </div>
+             <div class="panel-body">
 
-                Influence
-            </div>
-          </div>
-           </div></div>
-           
-
+                 <code>http://data.hulib.helsinki.fi/attx/onto#hasConfig</code>
+             </div>
+           </div>
+            </div></div>
 
 
-           
+
+            
+             <div class="row"><div class="col-md-12">
+               <div class="panel panel-default">
+             <div class="panel-heading">
+               <h3 class="panel-title">Label</h3>
+             </div>
+             <div class="panel-body">
+
+                 hasConfig
+             </div>
+           </div>
+            </div></div>
+            
+
+
+            
             <div class="row"><div class="col-md-12">
               <div class="panel panel-default">
             <div class="panel-heading">
@@ -634,7 +632,7 @@
             </div>
             <div class="panel-body">
 
-                Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation.
+                An Activity can have different configurations associated to with which specifies paramters for executing the activity.
             </div>
           </div>
            </div></div>
@@ -642,393 +640,70 @@
 
 
 
-
-           
-
-
-
-          
+            
 
 
 
-         
-           <div class="row"><div class="col-md-12">
+            
+
+                  <div class="row"><div class="col-md-12">
+                    <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Sub Property</h3>
+                  </div>
+                  <div class="panel-body">
+
+                      <li><a href="prop-ontohasstepconfig.html" title="http://data.hulib.helsinki.fi/attx/onto#hasStepConfig">onto:hasStepConfig</a></li>
+
+
+                  </div>
+                </div>
+                 </div></div>
+
+            
+
+
+            <div class="row"><div class="col-md-12">
               <div class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title">Usage</h3>
             </div>
-            <div class="panel-body" style="overflow: auto;">
 
-                <p>Instances of prov:Influence can have the following properties:</p>
-            </div>
-             <table class="table table-bordered" style="overflow: auto;">
+            <table class="table table-bordered" style="overflow: auto;">
 
-                <tr class="table-classproperties">
-                    <th>PROPERTY</th><th>TYPE</th><th>DESCRIPTION</th><th>RANGE</th>
-                </tr>
+               <tr class="table-classproperties">
+                   <th>DOMAIN</th><th>PROPERTY</th><th>RANGE</th>
+               </tr>
+               <tr>
+                   <td>
+                     
+                         
+                         
+                              <a href="class-provactivity.html" title="http://www.w3.org/ns/prov#Activity">prov:Activity</a>
+                           
+                           
+                         
+                     
+                   </td>
 
-                
+                    <td>
+                      onto:hasConfig
+                    </td>
 
-                    
-
-                    
-
-                        <tr class="table-inheritanceinfo">
-                            <th colspan="4" class="treeinfo"><span class="label label-default">From class <a title="prov:Influence" href="class-provinfluence.html" class="fromclass_link">prov:Influence</a></span>
-                            </th>
-                        </tr>
-
+                    <td>
+                      
+                          
+                          
+                               <a href="http://www.w3.org/2000/01/rdf-schema#Literal" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+                             
                             
-                            <tr>
-                                <td class="firsttd">
-                                    <a class="propcolor" title="onto:hadRole" href="prop-ontohadrole.html">onto:hadRole</a>
-                                </td>
-                                <td class="secondtd">
-                                    <i>owl:ObjectProperty<i>
-                                </td>
-                                <td class="thirdtd">
-                                    <span>--</span>
-                                </td>
-                                <td class="fourthtd">
-                                    
-                                    
-
-                                        
-                                          <a title="prov:Role" href="class-provrole.html" class="rdfclass">prov:Role</a>
-                                        
-
-
-                                    
-                                    
-                                </td>
-                            </tr>
-
-                            
-
-                    
-
-                    
-
-                
-
-                    
-
-                    
-
-                        <tr class="table-inheritanceinfo">
-                            <th colspan="4" class="treeinfo"><span class="label label-default">From class <a title="owl:Thing" href="class-owlthing.html" class="fromclass_link">owl:Thing</a></span>
-                            </th>
-                        </tr>
-
-                            
-                            <tr>
-                                <td class="firsttd">
-                                    <a class="propcolor" title="dc:creator" href="prop-dccreator.html">dc:creator</a>
-                                </td>
-                                <td class="secondtd">
-                                    <i>owl:AnnotationProperty<i>
-                                </td>
-                                <td class="thirdtd">
-                                    <span>--</span>
-                                </td>
-                                <td class="fourthtd">
-                                    
-                                        <i>owl:Thing</i>
-                                    
-                                </td>
-                            </tr>
-
-                            
-                            <tr>
-                                <td class="firsttd">
-                                    <a class="propcolor" title="dc:date" href="prop-dcdate.html">dc:date</a>
-                                </td>
-                                <td class="secondtd">
-                                    <i>owl:AnnotationProperty<i>
-                                </td>
-                                <td class="thirdtd">
-                                    <span>--</span>
-                                </td>
-                                <td class="fourthtd">
-                                    
-                                        <i>owl:Thing</i>
-                                    
-                                </td>
-                            </tr>
-
-                            
-                            <tr>
-                                <td class="firsttd">
-                                    <a class="propcolor" title="dc:rights" href="prop-dcrights.html">dc:rights</a>
-                                </td>
-                                <td class="secondtd">
-                                    <i>owl:AnnotationProperty<i>
-                                </td>
-                                <td class="thirdtd">
-                                    <span>--</span>
-                                </td>
-                                <td class="fourthtd">
-                                    
-                                        <i>owl:Thing</i>
-                                    
-                                </td>
-                            </tr>
-
-                            
-                            <tr>
-                                <td class="firsttd">
-                                    <a class="propcolor" title="http://creativecommons.org/ns#license" href="prop-httpcreativecommonsorgnslicense.html">http://creativecommons.org/ns#license</a>
-                                </td>
-                                <td class="secondtd">
-                                    <i>owl:ObjectProperty<i>
-                                </td>
-                                <td class="thirdtd">
-                                    <span>Associated License for a specific dataset.</span>
-                                </td>
-                                <td class="fourthtd">
-                                    
-                                    
-
-                                        
-                                          <a title="http://creativecommons.org/ns#License" href="class-httpcreativecommonsorgnslicense.html" class="rdfclass">http://creativecommons.org/ns#License</a>
-                                        
-
-
-                                    
-                                    
-                                </td>
-                            </tr>
-
-                            
-                            <tr>
-                                <td class="firsttd">
-                                    <a class="propcolor" title="onto:hasStepConfig" href="prop-ontohasstepconfig.html">onto:hasStepConfig</a>
-                                </td>
-                                <td class="secondtd">
-                                    <i>owl:DatatypeProperty<i>
-                                </td>
-                                <td class="thirdtd">
-                                    <span>A Step can have different configurations associated to with which specifies the Workflow how to perform the given step.</span>
-                                </td>
-                                <td class="fourthtd">
-                                    
-                                        <i>owl:Thing</i>
-                                    
-                                </td>
-                            </tr>
-
-                            
-                            <tr>
-                                <td class="firsttd">
-                                    <a class="propcolor" title="onto:hasStrategyType" href="prop-ontohasstrategytype.html">onto:hasStrategyType</a>
-                                </td>
-                                <td class="secondtd">
-                                    <i>owl:ObjectProperty<i>
-                                </td>
-                                <td class="thirdtd">
-                                    <span>The current strategy if a derivate of a specific type of Linking Strategy.</span>
-                                </td>
-                                <td class="fourthtd">
-                                    
-                                        <i>owl:Thing</i>
-                                    
-                                </td>
-                            </tr>
-
-                            
-                            <tr>
-                                <td class="firsttd">
-                                    <a class="propcolor" title="onto:usesArtifact" href="prop-ontousesartifact.html">onto:usesArtifact</a>
-                                </td>
-                                <td class="secondtd">
-                                    <i>owl:ObjectProperty<i>
-                                </td>
-                                <td class="thirdtd">
-                                    <span>An artifact can be used by any type of entity or resource in order to perform certain steps/activities.</span>
-                                </td>
-                                <td class="fourthtd">
-                                    
-                                    
-
-                                        
-                                          <a title="onto:Artifact" href="class-ontoartifact.html" class="rdfclass">onto:Artifact</a>
-                                        
-
-
-                                    
-                                    
-                                </td>
-                            </tr>
-
-                            
-                            <tr>
-                                <td class="firsttd">
-                                    <a class="propcolor" title="prov:agent" href="prop-provagent.html">prov:agent</a>
-                                </td>
-                                <td class="secondtd">
-                                    <i>owl:ObjectProperty<i>
-                                </td>
-                                <td class="thirdtd">
-                                    <span>The prov:agent property references an prov:Agent which influenced a resource. This property applies to an prov:AgentInfluence, which is given by a subproperty of prov:qualifiedInfluence from the influenced prov:Entity, prov:Activity or prov:Agent.</span>
-                                </td>
-                                <td class="fourthtd">
-                                    
-                                    
-
-                                        
-                                          <a title="prov:Agent" href="class-provagent.html" class="rdfclass">prov:Agent</a>
-                                        
-
-
-                                    
-                                    
-                                </td>
-                            </tr>
-
-                            
-                            <tr>
-                                <td class="firsttd">
-                                    <a class="propcolor" title="prov:hadDerivation" href="prop-provhadderivation.html">prov:hadDerivation</a>
-                                </td>
-                                <td class="secondtd">
-                                    <i>owl:ObjectProperty<i>
-                                </td>
-                                <td class="thirdtd">
-                                    <span>Inverse of wasDerivedFrom property</span>
-                                </td>
-                                <td class="fourthtd">
-                                    
-                                        <i>owl:Thing</i>
-                                    
-                                </td>
-                            </tr>
-
-                            
-                            <tr>
-                                <td class="firsttd">
-                                    <a class="propcolor" title="prov:qualifiedAssociation" href="prop-provqualifiedassociation.html">prov:qualifiedAssociation</a>
-                                </td>
-                                <td class="secondtd">
-                                    <i>owl:ObjectProperty<i>
-                                </td>
-                                <td class="thirdtd">
-                                    <span>An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity. It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity.</span>
-                                </td>
-                                <td class="fourthtd">
-                                    
-                                        <i>owl:Thing</i>
-                                    
-                                </td>
-                            </tr>
-
-                            
-                            <tr>
-                                <td class="firsttd">
-                                    <a class="propcolor" title="prov:wasDerivedFrom" href="prop-provwasderivedfrom.html">prov:wasDerivedFrom</a>
-                                </td>
-                                <td class="secondtd">
-                                    <i>owl:ObjectProperty<i>
-                                </td>
-                                <td class="thirdtd">
-                                    <span>A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.</span>
-                                </td>
-                                <td class="fourthtd">
-                                    
-                                        <i>owl:Thing</i>
-                                    
-                                </td>
-                            </tr>
-
-                            
-                            <tr>
-                                <td class="firsttd">
-                                    <a class="propcolor" title="prov:wasGeneratedBy" href="prop-provwasgeneratedby.html">prov:wasGeneratedBy</a>
-                                </td>
-                                <td class="secondtd">
-                                    <i>owl:ObjectProperty<i>
-                                </td>
-                                <td class="thirdtd">
-                                    <span>Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation.</span>
-                                </td>
-                                <td class="fourthtd">
-                                    
-                                        <i>owl:Thing</i>
-                                    
-                                </td>
-                            </tr>
-
-                            
-                            <tr>
-                                <td class="firsttd">
-                                    <a class="propcolor" title="rdfs:comment" href="prop-rdfscomment.html">rdfs:comment</a>
-                                </td>
-                                <td class="secondtd">
-                                    <i>owl:AnnotationProperty<i>
-                                </td>
-                                <td class="thirdtd">
-                                    <span>--</span>
-                                </td>
-                                <td class="fourthtd">
-                                    
-                                        <i>owl:Thing</i>
-                                    
-                                </td>
-                            </tr>
-
-                            
-                            <tr>
-                                <td class="firsttd">
-                                    <a class="propcolor" title="skos:altLabel" href="prop-skosaltlabel.html">skos:altLabel</a>
-                                </td>
-                                <td class="secondtd">
-                                    <i>owl:AnnotationProperty<i>
-                                </td>
-                                <td class="thirdtd">
-                                    <span>--</span>
-                                </td>
-                                <td class="fourthtd">
-                                    
-                                        <i>owl:Thing</i>
-                                    
-                                </td>
-                            </tr>
-
-                            
-                            <tr>
-                                <td class="firsttd">
-                                    <a class="propcolor" title="skos:prefLabel" href="prop-skospreflabel.html">skos:prefLabel</a>
-                                </td>
-                                <td class="secondtd">
-                                    <i>owl:AnnotationProperty<i>
-                                </td>
-                                <td class="thirdtd">
-                                    <span>--</span>
-                                </td>
-                                <td class="fourthtd">
-                                    
-                                        <i>owl:Thing</i>
-                                    
-                                </td>
-                            </tr>
-
-                            
-
-                    
-
-                    
-
-                
-
+                          
+                      
+                    </td>
             </table>
-
 
           </div>
            </div></div>
-
-        
-
-
-
 
 
 
@@ -1057,9 +732,11 @@
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">xml:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/XML/1998/namespace&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">xsd:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
 
-<span class="nn">prov:</span><span class="nt">Influence</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">owl:</span><span class="nt">Class</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="nn">rdfs:</span><span class="nt">label</span><span class="w"> </span><span class="s">&quot;Influence&quot;</span><span class="o">@</span><span class="ge">en</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="nn">rdfs:</span><span class="nt">comment</span><span class="w"> </span><span class="s">&quot;Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation.&quot;</span><span class="o">@</span><span class="ge">en</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
+<span class="nn">:</span><span class="nt">hasConfig</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">owl:</span><span class="nt">DatatypeProperty</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nn">rdfs:</span><span class="nt">label</span><span class="w"> </span><span class="s">&quot;hasConfig&quot;</span><span class="o">@</span><span class="ge">en</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nn">rdfs:</span><span class="nt">comment</span><span class="w"> </span><span class="s">&quot;An Activity can have different configurations associated to with which specifies paramters for executing the activity.&quot;</span><span class="o">@</span><span class="ge">en</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nn">rdfs:</span><span class="nt">domain</span><span class="w"> </span><span class="nn">prov:</span><span class="nt">Activity</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nn">rdfs:</span><span class="nt">range</span><span class="w"> </span><span class="nn">rdfs:</span><span class="nt">Literal</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
 </pre></div>
 
 
@@ -1067,7 +744,6 @@
             </div>
           </div>
            </div></div>
-
 
 
 
@@ -1160,7 +836,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_21").offset().top - 100
+          scrollTop: $("#sd_31").offset().top - 100
       }, 100);
     });
 
